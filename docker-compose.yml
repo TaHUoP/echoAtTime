@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+
+  node:
+    image: node:alpine
+    container_name: node
+    ports:
+      - "${NODE_PORT}:${NODE_PORT}"
+    volumes:
+      - .:/var/www/server
+    working_dir: /var/www/server
+    command: ["npm", "start"]
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "${REDIS_PORT}:${REDIS_PORT}"

@@ -1,0 +1,24 @@
+{
+  "name": "echo_at_time",
+  "version": "1.0.0",
+  "description": "Simple application server that prints a message at a given time in the future",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaHUoP/echoAtTime"
+  },
+  "author": "tahuop",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.0.1",
+    "async-redis": "^1.1.7",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "redis": "^2.8.0",
+    "uuid": "^3.3.2"
+  }
+}
